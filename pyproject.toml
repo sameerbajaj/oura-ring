@@ -1,14 +1,14 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
 [project]
-name = "oura-ring"
+name = "sameer-oura-ring"
 version = "1.0.0"
 description = "Oura Ring V2 API integration and tactical morning coach"
 readme = "README.md"
 requires-python = ">=3.9"
-license = {text = "MIT"}
+license = "MIT"
 authors = [
     {name = "Sameer Bajaj", email = "sameer@sameerbajaj.com"}
 ]
@@ -16,7 +16,6 @@ keywords = ["oura", "health", "sleep", "hrv", "api"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: End Users/Desktop",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
@@ -24,6 +23,13 @@ dependencies = [
     "python-dotenv>=1.0.0",
 ]
 
+[project.scripts]
+oura-ring = "cli:main"
+
+[tool.setuptools]
+py-modules = ["cli", "oura_ring", "probe_v2", "probe_v2_sessions"]
+
 [project.urls]
-Homepage = "https://sameerbajaj.com/tools/clawdbot-skills/"
+Homepage = "https://sameerbajaj.com/tools/"
+Website = "https://sameerbajaj.com"
 Repository = "https://github.com/sameerbajaj/oura-ring"

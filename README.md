@@ -20,4 +20,4 @@ I built this because I wanted an assistant that knew when I was red-lining. If y
 
 ---
 
-Part of the open-source tools collection by [Sameer Bajaj](https://sameerbajaj.com). Learn more on the [project page](https://sameerbajaj.com/tools/clawdbot-skills/).
+Part of the open-source tools collection by [Sameer Bajaj](https://sameerbajaj.com). Learn more on the [project page](https://sameerbajaj.com/tools/).
